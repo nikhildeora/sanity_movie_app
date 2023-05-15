@@ -159,9 +159,9 @@ const AddMovie = () => {
       <input ref={posterRef} type="file" id="poster" name="poster" accept="image/*" required />
 
       <label for="castMembers">Cast Members:</label>
-      <div>{castMembersArray.length > 0 && castMembersArray?.map((el, i) => {
+      <div className={styles.badgeContainer}>{castMembersArray.length > 0 && castMembersArray?.map((el, i) => {
         return (
-          <span key={i}>{el.name} <span onClick={() => deleteCastMemFromArray(el.person._ref)} >x</span> </span>
+          <span className={styles.badge} key={i}>{el.name} <span onClick={() => deleteCastMemFromArray(el.person._ref)} >x</span> </span>
         )
       })}</div>
       <input ref={castCharRef} type="text" placeholder='type character name' />
@@ -172,12 +172,12 @@ const AddMovie = () => {
           )
         })}
       </select>
-      <button onClick={() => AddOneCastMember()}>Add Cast Member</button>
+      <button className={styles.tealButton} onClick={() => AddOneCastMember()}>Add Cast Member</button>
 
       <label for="crewMembers">Crew Members:</label>
-      <div>{crewMembersArray.length > 0 && crewMembersArray?.map((el, i) => {
+      <div className={styles.badgeContainer}>{crewMembersArray.length > 0 && crewMembersArray?.map((el, i) => {
         return (
-          <span key={i}>{el.name} <span onClick={() => deleteCrewMemFromArray(el.person._ref)} >x</span> </span>
+          <span className={styles.badge} key={i}>{el.name} <span onClick={() => deleteCrewMemFromArray(el.person._ref)} >x</span> </span>
         )
       })}</div>
       <input ref={crewDeparRef} type="text" placeholder='type department name' />
@@ -189,10 +189,9 @@ const AddMovie = () => {
           )
         })}
       </select>
-      <button onClick={() => AddOneCrewMember()}>Add Crew Member</button>
+      <button className={styles.tealButton} onClick={() => AddOneCrewMember()}>Add Crew Member</button>
 
-      {/* <input type="submit" value="Create Movie" /> */}
-      <button onClick={getFormData}>Add Movie</button>
+      <button className={styles.tealButton} onClick={getFormData}>Add Movie</button>
     </div>
 
   )

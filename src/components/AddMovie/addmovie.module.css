@@ -1,55 +1,115 @@
 form {
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 75px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="date"],
-  textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-  }
-  
-  select {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    height: 100px;
-    margin-bottom: 10px;
-  }
-  
-  input[type="file"] {
-    margin-bottom: 10px;
-  }
-  
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
 
-  .main_div{
-    margin-top: 78px;
-  }
-  
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.main_div {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin-top: 78px;
+  margin-bottom: 70px;
+}
+
+/* Labels */
+.main_div label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Inputs and Textarea */
+.main_div input[type="text"],
+.main_div input[type="date"],
+.main_div textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.main_div button {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Badges */
+.main_div .badgeContainer {
+  margin-bottom: 10px;
+}
+
+.main_div .badge {
+  display: inline-block;
+  background-color: teal;
+  color: white;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main_div .badge span {
+  margin-left: 5px;
+  cursor: pointer;
+}
