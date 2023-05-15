@@ -1,0 +1,25 @@
+.button_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  .add_button, .edit_button, .delete_button {
+    background-color: teal;
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 350px;
+  }
+  
+  .add_button:hover, .edit_button:hover, .delete_button:hover {
+    background-color: #006666;
+  }
+  

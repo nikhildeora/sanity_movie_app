@@ -1,0 +1,78 @@
+.movie_container {
+    display: flex;
+    margin: 1rem;
+  }
+  
+  .poster_container {
+    width: 30%;
+    height: auto;
+    margin-right: 1rem;
+  }
+  
+  .poster_container img {
+    width: 100%;
+  }
+  
+  .info_container {
+    width: 70%;
+  }
+  
+  .crew_container, .cast_container {
+    margin-top: 1rem;
+  }
+  
+  .crew_container h2, .cast_container h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .crew_container div, .cast_container div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .crew_container div > div, .cast_container div > div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .crew_container div img, .cast_container div img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  .crew_container div h2, .cast_container div h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+  
+  .crew_container div p, .cast_container div p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+  
+  .overview_container {
+    margin-top: 1rem;
+  }
+  
+  .overview_container h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .overview_container p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
