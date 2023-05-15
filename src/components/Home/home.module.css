@@ -74,7 +74,7 @@
   }
   
   .crew_member_section {
-    max-height: 200px; /* Adjust the height as per your preference */
+    max-height: 200px; 
     overflow-y: scroll;
     width: 60%;
     margin: auto;
