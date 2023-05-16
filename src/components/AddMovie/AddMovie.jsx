@@ -22,6 +22,12 @@ const AddMovie = () => {
   useEffect(() => { AllCrewMembers() }, [])
 
   const getFormData = () => {
+    
+    if(castMembersArray.length==0 || crewMembersArray.length==0 || titleRef.current.value=="" || populRef.current.value == "" || releaseRef.current.value == "" || posterRef.current.files.length==0 || overviewRef.current.value == ""){
+       alert("all fields are mandatory");
+       return;
+    }
+     
 
     let crewNewArr = crewMembersArray.map((el) => {
       delete el.name;
@@ -72,14 +78,24 @@ const AddMovie = () => {
       crewMembers: [...crewNewArr]
     }
 
-
     client.assets.upload('image', posterRef.current.files[0])
       .then((res) => {
         obj.poster.asset._ref = res._id
       })
       .then(() => {
         client.create(obj)
-          .then((res) => console.log(res))
+          .then((res) => {
+            console.log(res)
+            alert("movie created successfully");
+            setCastMembersArray([]);
+            setCrewMembersArray([]);
+            titleRef.current.value = "";
+            populRef.current.value = "";
+            releaseRef.current.value = "";
+            posterRef.current.files = [];
+            posterRef.current.value =  "";
+            overviewRef.current.value = "";
+          })
           .catch((err) => console.log(err))
       })
       .catch((err) => console.log(err))
@@ -141,7 +157,7 @@ const AddMovie = () => {
   }
 
   return (
-    // <div onSubmit={(e) => getFormData(e)}>
+    
     <div className={styles.main_div}>
       <label for="title">Title:</label>
       <input ref={titleRef} type="text" id="title" name="title" required />

@@ -1,0 +1,136 @@
+.editmovie_main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 78px;
+}
+
+.editmovie_first_flex_div{
+    flex: 4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 12px;
+}
+
+.edit_each_movie_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.edit_each_movie_div>div{
+    display: flex;
+    align-items: center;
+}
+
+.edit_each_movie_div>div:nth-child(1){
+   flex: 5;
+}
+
+.edit_each_movie_div>div:nth-child(1)>div>p{
+    font-weight: bold;
+    margin-left: 18px;
+}
+
+.edit_each_movie_div>div:nth-child(2){
+    flex: 3;
+    justify-content: flex-end;
+}
+
+.edit_div_image{
+    width: 40%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* for edit movie form css  */
+
+.main_div select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .main_div input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  
+  .main_div {
+    flex: 6;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 70px;
+  }
+  
+  /* Labels */
+  .main_div label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: bold;
+  }
+  
+  /* Inputs and Textarea */
+  .main_div input[type="text"],
+  .main_div input[type="date"],
+  .main_div textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Buttons */
+  .main_div button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  /* Badges */
+  .main_div .badgeContainer {
+    margin-bottom: 10px;
+  }
+  
+  .main_div .badge {
+    display: inline-block;
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .main_div .badge span {
+    margin-left: 5px;
+    cursor: pointer;
+  }
